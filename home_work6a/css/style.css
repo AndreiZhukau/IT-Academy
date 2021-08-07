@@ -1,0 +1,49 @@
+a {
+    font-size: 18px;
+    color: #008000;
+    padding: 10px 20px;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+/* применил border-right и после пятой ссылки
+убрал при помощи a:last-child*/
+.one__class a {
+    border-right: 3px solid #FF4500;
+}
+
+.one__class a:last-child {
+    border-right: none;
+}
+
+/*использовал border-left и его убрал
+при мощи ul:first-child*/
+.two__class ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 15px 0px;
+}
+
+.two__class ul li a {
+    border-left: 3px solid #FF4500;
+}
+
+.two__class ul:first-child li a {
+    border-left: none;
+}
+
+/*использовал табличный вариант и border-right
+который убрал при помощи :not(:last-child)*/
+table{
+    border-spacing: 0;
+}
+
+td {
+    height: 30px;
+}
+
+.three__class tr td:not(:last-child) {
+    border-right: 3px solid #FF4500;
+}
