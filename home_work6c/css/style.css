@@ -1,0 +1,26 @@
+.data {
+    color: green;
+}
+
+.chempions {
+    color: #FF0000;
+}
+
+.info::before {
+    content: url('/images/extref.png');
+    color: #0000FF;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text {
+    color: #1E90FF;
+    font-style: italic;
+}
+
+.top {
+    color: #0000FF;
+    font-weight: bold;
+    text-decoration: none
+}
