@@ -1,0 +1,19 @@
+.stars__rating {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 500px;
+    height: 500px;
+    margin: 200px;
+}
+
+.star {
+    width: 128px;
+    height: 128px;
+    background: url("/medal1.png") no-repeat;
+    cursor: pointer;
+}
+
+.stars__rating .star:hover,
+.stars__rating .star:hover ~ .star {
+    background: url("/medal2.png");
+}
