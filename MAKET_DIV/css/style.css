@@ -1,11 +1,9 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr, 2fr;
-
+    display: flex;
+    min-height: calc(100vh - 20vh);
 }
 
 .header, .footer {
-    grid-column: 1/4;
     height: 10vh;
     background: #00BFFF;
     color: #00f;
